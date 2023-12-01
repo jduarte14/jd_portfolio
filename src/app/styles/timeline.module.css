@@ -131,15 +131,21 @@
         font-size:2.5em;
     }
 
+    .timeline_box ul,
+    .timeline_box_right ul {
+        padding-left:15px;
+    }
+
     .section {
         padding-left:20px;
         padding-right:20px;
     }
 
-    .timeline_box {
+    .timeline_box,
+    .timeline_box_right {
         background: #1c1c1c;
         color: white;
-        padding: 20px;
+        padding: 10px;
         margin: 20px;
         border-radius: 5px;
         border-bottom: 3px solid white;
@@ -173,7 +179,12 @@
     }
 }
 
-
+@media (max-width: 640px) {
+    .timeline_icon_right,
+    .timeline_icon {
+        top:5px;
+    }
+}
 
 @keyframes cambioColores {
     0% {

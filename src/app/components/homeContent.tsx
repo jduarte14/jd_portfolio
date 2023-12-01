@@ -16,11 +16,12 @@ const HomeContent = () => {
                         to style your site.
                     </p>
                 </div>
-                <div className={styles.custom_container}>
+               
+             
+            </div>
+            <div className={styles.custom_container}>
                     <div className={styles.custom_cirlce}></div>
                 </div>
-
-            </div>
 
         </section>
     )
