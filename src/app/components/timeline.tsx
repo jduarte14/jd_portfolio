@@ -79,7 +79,7 @@ const Timeline = () => {
                         </div>
                     </motion.aside>
                 </div>
-                <div className={styles.box_right} ref={ref} >
+                <div className={styles.box_right} >
                     <motion.div className={styles.timeline_icon_right} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
                         <Image src='/icons/flow.jpg' width={60} height={60} alt='FlowLabs work experience' />
@@ -108,7 +108,7 @@ const Timeline = () => {
                         </div>
                     </motion.aside>
                 </div>
-                <div className={styles.relative} >
+                <div className={styles.relative}>
                     <motion.div className={styles.timeline_icon} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
                         <Image src='/icons/jd.svg' width={60} height={60} alt='Fenicio work experience' />

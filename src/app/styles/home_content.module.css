@@ -111,6 +111,12 @@
     }
 }
 
+@media (max-width:640px) {
+    .info {
+        padding:2% 5%;
+    }
+}
+
 @keyframes jump {
     0% {
       transform:translateY(30px);
