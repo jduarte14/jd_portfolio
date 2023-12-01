@@ -10,7 +10,7 @@ const Overlay = () => {
         const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
 
         barsRefs.current.forEach((barRef, index) => {
-            tl.to(barRef, { height: '0%', duration: 0.5, delay: index * 0.1, pointerEvents:'none', });
+            tl.to(barRef, { height: '0%', duration: 0.5, delay: index * 0.1, pointerEvents: 'none', });
         });
     };
 
@@ -20,11 +20,10 @@ const Overlay = () => {
 
     return (
         <aside className={styles.container}>
-            <div ref={(el) => (barsRefs.current[0] = el)} className={styles.bar} />
-            <div ref={(el) => (barsRefs.current[1] = el)} className={styles.bar} />
-            <div ref={(el) => (barsRefs.current[2] = el)} className={styles.bar} />
-            <div ref={(el) => (barsRefs.current[3] = el)} className={styles.bar} />
-
+            <div ref={(el) => (el && (barsRefs.current[0] = el))} className={styles.bar} />
+            <div ref={(el) => (el && (barsRefs.current[1] = el))} className={styles.bar} />
+            <div ref={(el) => (el && (barsRefs.current[2] = el))} className={styles.bar} />
+            <div ref={(el) => (el && (barsRefs.current[3] = el))} className={styles.bar} />
         </aside>
     );
 };
