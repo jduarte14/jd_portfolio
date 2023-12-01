@@ -22,7 +22,7 @@ const Overview = () => {
     }, [inView]);
 
     return (
-        <section className={styles.section} ref={ref}>
+        <section className={styles.section} ref={ref} id="about">
             <motion.div className={styles.container} initial="hidden" animate={isVisible ? "show" : "hidden"} variants={textVariant()}>
                 <h5>Introduction</h5>
                 <h2>Overview</h2>

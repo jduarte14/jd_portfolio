@@ -19,7 +19,7 @@ const Testimonials = () => {
         }
     }, [inView]);
     return (
-        <section className={styles.section} ref={ref}>
+        <section className={styles.section} ref={ref} id="testimonials">
             <div className={styles.container}>
                 <div className={styles.title_info}>
                     <h5>What other say</h5>

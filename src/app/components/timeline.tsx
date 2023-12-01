@@ -42,8 +42,8 @@ const Timeline = () => {
         }
     }, [inView]);
     return (
-        <section className={styles.section} >
-            <div className={styles.title_info} > 
+        <section className={styles.section}  id="work">
+            <div className={styles.title_info}  ref={ref}> 
                 <h5>What i have done so far</h5>
                 <h2>Work Experience.</h2>
             </div>

@@ -5,7 +5,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <div style={{position:"relative"}}>
-            <section className={styles.section}>
+            <section className={styles.section} id="contact">
                 <div className={styles.container}>
                     <div className={styles.container_info}>
                         <p>Get in touch</p>

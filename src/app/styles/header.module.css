@@ -9,11 +9,11 @@
     border-top: unset;
     border-left: unset;
     border-right: unset;
-    position:fixed;
-    left:0;
-    right:0;
-    background:var(--black);
-    z-index:1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1;
 }
 
 .logo {
@@ -29,19 +29,19 @@
 .logo h3 {
     margin: 0;
     font-size: 35px;
-    background-image: linear-gradient(90deg,  var(--border-color-1),  var(--border-color-2), #2E71FF, #00FFBE);
+    background-image: linear-gradient(90deg, var(--border-color-1), var(--border-color-2), #2E71FF, #00FFBE);
     background-size: 500%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition:0.3s ease, background-position 0.8s ease-in-out;
+    transition: 0.3s ease, background-position 0.8s ease-in-out;
     cursor: pointer;
-  }
+}
 
-  .logo:hover h3 {
+.logo:hover h3 {
     background-position: 100%;
     color: #ffffff;
-  }
+}
 
 .link {
     display: inline-block;
@@ -55,7 +55,7 @@
     font-weight: bold;
     border-radius: 5px;
     margin: 0 5px;
-    font-size:18px;
+    font-size: 18px;
 }
 
 .link::before {
@@ -79,13 +79,69 @@
     left: 0;
 }
 
-@media (max-width:920px) {
-    .header {
-        position:sticky;
-        top:0;
-    }
+@media (min-width:921px) {
     .header nav {
         display:none;
+    }
+    .header .hamburguer,
+    .header .mobile_menu {
+        display: none;
+    }
+}
+
+@media (max-width:920px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index:1;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .hamburguer {
+        background: unset;
+        border: unset;
+    }
+
+    .hamburguer svg {
+        filter: invert(1);
+        font-size: 30px;
+    }
+
+    .header .mobile_menu,
+    .mobile_menu_hide {
+        position: fixed;
+        top: 61px;
+        bottom: 0;
+        height: 100%;
+        DISPLAY: FLEX;
+        flex-direction: column;
+        RIGHT: 0;
+        background: #0a0a0a;
+        max-width: max-content;
+        border-width: 2px;
+        border-top-style:solid;
+        border-left-style: solid;
+        animation: cambioColores 5s infinite;
+        z-index:1;
+        transition:0.3s ease;
+        transform:translateX(0);
+    }
+
+   
+    .mobile_menu_hide {
+        transform:translateX(100%);
+    }
+    .header .overlay {
+        position:fixed;
+        left:0;
+        right:0;
+        top:61px;
+        bottom:0;
+        background:rgba(0,0,0,0.3);
+        z-index:0;
     }
 }
 
