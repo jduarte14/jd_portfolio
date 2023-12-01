@@ -11,7 +11,7 @@ const Testimonials = () => {
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({
         threshold: 0.5,
-        triggerOnce: true, 
+        triggerOnce: true,
     });
     useEffect(() => {
         if (inView) {
@@ -31,11 +31,11 @@ const Testimonials = () => {
                             testimonial.map((partner, index) => {
                                 return (
                                     <motion.div className={styles.testimonial_info} key={`${partner.name} testimonial`}
-                                    initial="hidden"
-                                    animate={isVisible ? "show" : "hidden"}
-                                    variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+                                        initial="hidden"
+                                        animate={isVisible ? "show" : "hidden"}
+                                        variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
                                         <b>
-                                        &apos;&apos;
+                                            &apos;&apos;
                                         </b>
                                         <p>
                                             {partner.testimonial}
