@@ -35,7 +35,7 @@ const Testimonials = () => {
                                     animate={isVisible ? "show" : "hidden"}
                                     variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
                                         <b>
-                                            "
+                                        &apos;&apos;
                                         </b>
                                         <p>
                                             {partner.testimonial}
