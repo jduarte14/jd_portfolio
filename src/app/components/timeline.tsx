@@ -1,8 +1,8 @@
 'use client'
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { VerticalTimeline } from 'react-vertical-timeline-component';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import "react-vertical-timeline-component/style.min.css";
+import 'react-vertical-timeline-component/style.min.css';
 import styles from './../styles/timeline.module.css';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
@@ -22,7 +22,7 @@ const iconVariants = {
         scale: 1,
         transition: {
             delay: 0.5,
-            type: "spring",
+            type: 'spring',
             stiffness: 100,
             damping: 10,
         },
@@ -42,19 +42,19 @@ const Timeline = () => {
         }
     }, [inView]);
     return (
-        <section className={styles.section}  id="work">
+        <section className={styles.section}  id='work'>
             <div className={styles.title_info}  ref={ref}> 
                 <h5>What i have done so far</h5>
                 <h2>Work Experience.</h2>
             </div>
           
-            <VerticalTimeline  contentStyle={{ background: "#1d1836", color: "#fff", position: "relative" }} >
+            <VerticalTimeline  contentStyle={{ background: '#1d1836', color: '#fff', position: 'relative' }} >
                 <div className={styles.relative} ref={ref}>
-                    <motion.div className={styles.timeline_icon} animate={isVisible ? "visible" : "hidden"}
+                    <motion.div className={styles.timeline_icon} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
-                        <Image src="/icons/fenicio.png" width={60} height={60} alt="Fenicio work experience" />
+                        <Image src='/icons/fenicio.png' width={60} height={60} alt='Fenicio work experience' />
                     </motion.div>
-                    <motion.aside initial="hiddenLeft" animate={isVisible ? "showLeft" : ''} variants={SlideInVariants} className={styles.timeline_box}>
+                    <motion.aside initial='hiddenLeft' animate={isVisible ? 'showLeft' : ''} variants={SlideInVariants} className={styles.timeline_box}>
                         <div className={styles.timeline_info}>
                             <h3>Front end developer (Vue, React, Javascript)</h3>
                             <p> Fenicio </p>
@@ -80,11 +80,11 @@ const Timeline = () => {
                     </motion.aside>
                 </div>
                 <div className={styles.box_right} ref={ref} >
-                    <motion.div className={styles.timeline_icon_right} animate={isVisible ? "visible" : "hidden"}
+                    <motion.div className={styles.timeline_icon_right} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
-                        <Image src="/icons/flow.jpg" width={60} height={60} alt="FlowLabs work experience" />
+                        <Image src='/icons/flow.jpg' width={60} height={60} alt='FlowLabs work experience' />
                     </motion.div>
-                    <motion.aside initial="hiddenRight" animate={isVisible ? "showRight" : ''} variants={SlideInVariants} className={styles.timeline_box_right}>
+                    <motion.aside initial='hiddenRight' animate={isVisible ? 'showRight' : ''} variants={SlideInVariants} className={styles.timeline_box_right}>
                         <div className={styles.timeline_info}>
                             <h3>Front end developer (Vue, React, React native)</h3>
                             <p> FlowLabs </p>
@@ -109,11 +109,11 @@ const Timeline = () => {
                     </motion.aside>
                 </div>
                 <div className={styles.relative} >
-                    <motion.div className={styles.timeline_icon} animate={isVisible ? "visible" : "hidden"}
+                    <motion.div className={styles.timeline_icon} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
-                        <Image src="/icons/jd.svg" width={60} height={60} alt="Fenicio work experience" />
+                        <Image src='/icons/jd.svg' width={60} height={60} alt='Fenicio work experience' />
                     </motion.div>
-                    <motion.aside initial="hiddenLeft" animate={isVisible ? "showLeft" : ''} variants={SlideInVariants} className={styles.timeline_box}>
+                    <motion.aside initial='hiddenLeft' animate={isVisible ? 'showLeft' : ''} variants={SlideInVariants} className={styles.timeline_box}>
                         <div className={styles.timeline_info}>
                             <h3>Front end Developer (Vue, React, Javascript, Node, React Native, MongoDB)</h3>
                             <p> Freelance </p>
