@@ -1,6 +1,5 @@
 
 'use client'
-import styles from '././../../styles/contact.module.css';
 import React, { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, Stars } from "@react-three/drei";

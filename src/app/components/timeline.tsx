@@ -48,7 +48,7 @@ const Timeline = () => {
                 <h2>Work Experience.</h2>
             </div>
           
-            <VerticalTimeline  contentStyle={{ background: '#1d1836', color: '#fff', position: 'relative' }} >
+            <VerticalTimeline >
                 <div className={styles.relative} ref={ref}>
                     <motion.div className={styles.timeline_icon} animate={isVisible ? 'visible' : 'hidden'}
                         variants={iconVariants}>
