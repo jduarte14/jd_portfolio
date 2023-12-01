@@ -67,7 +67,7 @@ const Timeline = () => {
                                     I specialized in two departments: Kick-off,
                                     where the projects began, and Customer Support,
                                     where we ensured the aesthetics and operation of the site,
-                                    as well as addressing all of the clients' needs and requests.
+                                    as well as addressing all of the clients needs and requests.
                                 </li>
                             </ul>
                             <ul>
