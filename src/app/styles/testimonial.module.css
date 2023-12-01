@@ -1,0 +1,144 @@
+.section {
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: relative;
+    padding-bottom:5%;
+}
+
+.section::after {
+    content: '';
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(11 78 76) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    height: 55px;
+}
+
+.title_info {
+    color: white;
+    background: #07726e;
+    padding: 2% 5%;
+    border-radius: 10px;
+    position: relative;
+    top:50px;
+}
+
+
+.title_info h2 {
+    font-size: 3.5em;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.title_info h5 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 1.2em;
+}
+
+.testimonial_info {
+    max-width:300px;
+    background:#0a0a0a;
+    border-radius:20px;
+    padding:3%;
+    margin-top:3%;
+}
+
+.testimonial_info b {
+    font-size:5em;
+}
+
+.testimonial_info p {
+    font-size:1.2em;
+}
+
+.testimonial_wrapper {
+    background:#034d4b;
+    color:white;
+    padding:5%;
+}
+
+.sub_text {
+    font-size:13px;
+    color:gray;
+    padding-top:10px;
+}
+
+.autor_info {
+    display:flex;
+    align-items: center;
+    margin-top:auto;
+}
+
+.autor_info img {
+    border-radius:100px;
+    border:solid white 3px;
+}
+
+.autor_info div {
+    padding-right:20px;
+}
+
+.testimonial_box {
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+@media (min-width:921px) {
+    .section {
+        max-width:70vw;
+        margin:0 auto;
+    }
+    .testimonial_info{
+        padding:5%;
+    }
+    .testimonial_box {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:920px) {
+    .testimonial_box {
+        overflow-x: scroll;
+    }
+    .title_info h2 {
+        font-size:2em;
+    }
+
+    .section::after {
+        bottom:unset;
+    }
+
+    .title_info {
+        top:15px;
+    }
+    
+}
+
+@keyframes cambioColores {
+    0% {
+        border-color: var(--border-color-1);
+    }
+
+    25% {
+        border-color: var(--border-color-2);
+    }
+
+    50% {
+        border-color: var(--border-color-1);
+    }
+
+    75% {
+        border-color: var(--border-color-2);
+    }
+
+    100% {
+        border-color: var(--border-color-1);
+    }
+}

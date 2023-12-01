@@ -1,0 +1,136 @@
+.section {
+    padding:5%;
+    position: relative;
+}
+
+.aside {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+.section > div + div {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+ .canvas {
+    position:fixed;
+    left:0;
+    right:0;
+}
+
+.container {
+    background:#034d4b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius:10px;
+    max-width:max-content;
+    padding:5%;
+}
+
+.container_info {
+    width:100%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    min-width: 16vw;
+}
+
+.container label {
+    color:White;
+    font-weight: bold;
+    padding:5% 0;
+}
+
+.container input {
+    margin-bottom:20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #07726e;
+    color: white;
+    border:unset;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    font-weight:900;
+}
+
+.btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 20px;
+    font-weight:900;
+    transition:0.3s ease;
+    cursor: pointer;
+    height:50px !important;
+}
+
+.btn:hover {
+    opacity:0.8;
+}
+
+.container input::placeholder {
+    color:white;
+    font-weight:bold;
+}
+
+.container h3 {
+    font-size:3.5em;
+    color:white;
+    font-weight: bold;
+    font-weight:900;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.container p {
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-align: left;
+    margin-bottom:10px;
+}
+
+.section canvas {
+    width:700px;
+    height:700px;
+}
+
+@media (max-width:920px) {
+    .section canvas {
+        width:200px;
+        height:300px;
+    }
+    .contact_container h2 {
+        font-size:1em;
+    }
+    .section {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width:921px) {
+    .section {
+        display:flex;
+        align-items: center;
+        max-width:70vw;
+        margin:0 auto;
+    }
+}

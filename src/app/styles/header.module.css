@@ -1,0 +1,113 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1% 5%;
+    border-width: 2px;
+    border-style: solid;
+    animation: cambioColores 5s infinite;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    position:fixed;
+    left:0;
+    right:0;
+    background:var(--black);
+    z-index:1;
+}
+
+.logo {
+    color: var(--border-color-2);
+    font-weight: bold;
+    margin-right: auto;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+.logo h3 {
+    margin: 0;
+    font-size: 35px;
+    background-image: linear-gradient(90deg,  var(--border-color-1),  var(--border-color-2), #2E71FF, #00FFBE);
+    background-size: 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition:0.3s ease, background-position 0.8s ease-in-out;
+    cursor: pointer;
+  }
+
+  .logo:hover h3 {
+    background-position: 100%;
+    color: #ffffff;
+  }
+
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, border-color 0.3s;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size:18px;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-colors);
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.link:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.link:hover::before {
+    left: 0;
+}
+
+@media (max-width:920px) {
+    .header {
+        position:sticky;
+        top:0;
+    }
+    .header nav {
+        display:none;
+    }
+}
+
+
+@keyframes cambioColores {
+    0% {
+        border-color: var(--border-color-1);
+    }
+
+    25% {
+        border-color: var(--border-color-2);
+    }
+
+    50% {
+        border-color: var(--border-color-1);
+    }
+
+    75% {
+        border-color: var(--border-color-2);
+    }
+
+    100% {
+        border-color: var(--border-color-1);
+    }
+}
