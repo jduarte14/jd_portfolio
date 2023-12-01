@@ -16,17 +16,18 @@ const Testimonials = () => {
     useEffect(() => {
         if (inView) {
             setIsVisible(true);
+            console.log(inView);
         }
     }, [inView]);
     return (
-        <section className={styles.section} ref={ref} id="testimonials">
+        <section className={styles.section}  id="testimonials">
             <div className={styles.container}>
-                <div className={styles.title_info}>
+                <div className={styles.title_info} ref={ref}>
                     <h5>What other say</h5>
                     <h2>Testimonials:</h2>
                 </div>
                 <div className={styles.testimonial_wrapper}>
-                    <div className={styles.testimonial_box} ref={ref}>
+                    <div className={styles.testimonial_box} >
                         {
                             testimonial.map((partner, index) => {
                                 return (

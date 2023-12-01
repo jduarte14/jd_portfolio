@@ -104,9 +104,6 @@
 }
 
 @media (max-width:920px) {
-    .testimonial_box {
-        overflow-x: scroll;
-    }
     .title_info h2 {
         font-size:2em;
     }
@@ -117,6 +114,9 @@
 
     .title_info {
         top:15px;
+    }
+    .section {
+        height:100%;
     }
     
 }
