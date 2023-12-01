@@ -9,7 +9,7 @@ const HomeContent = () => {
                     <div className={styles.rectangle}></div>
                 </div>
                 <div className={styles.info}>
-                    <h1>Hi, I'm <b>Joaquin</b> </h1>
+                    <h1>Hi, I&apos;m <b>Joaquin</b> </h1>
                     <p>
                         Im a Front-end Developer <br />
                         who is always self developing new ways <br />
