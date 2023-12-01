@@ -32,9 +32,9 @@ export const testimonials = [
   },
   
   {
-    testimonial:"He consistently provided timely solutions and was a tremendous help throughout creating our sites.",
+    testimonial:"He consistently provided timely solutions and was a tremendous help throughout creating our sites. He's great at learning and giving advices",
     name: "Santiago Gorga",
-    designation: "Project Manager at Fenicio",
+    designation: "Project Manager of Customer Service on Fenicio",
     image:'/images/santiago.jpg'
   },
   {

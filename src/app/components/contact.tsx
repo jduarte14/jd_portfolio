@@ -5,13 +5,13 @@ import React from 'react';
 const Contact = () => {
     return (
         <div style={{position:"relative"}}>
-            <section className={styles.section} id="contact">
+            <section className={styles.section} >
                 <div className={styles.container}>
                     <div className={styles.container_info}>
                         <p>Get in touch</p>
                         <h3>Contact</h3>
                     </div>
-                    <form action="">
+                    <form action="" id="contact">
                         <label htmlFor="">
                             Your name
                         </label>
