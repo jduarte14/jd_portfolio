@@ -29,7 +29,7 @@ export const EarthCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      <ambientLight intensity={1} />
+      <ambientLight intensity={1.5} />
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
          ref={controls}
