@@ -2,7 +2,7 @@
 import React, { useRef, FormEvent } from 'react';
 import styles from './../styles/contact.module.css';
 import emailjs from '@emailjs/browser';
-import keys from './../data/keys';
+
 
 const Form: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -12,16 +12,18 @@ const Form: React.FC = () => {
 
     const sendEmail = (e: FormEvent) => {
         e.preventDefault();
-
+        console.log(process.env.SERVICE_ID,'asd')
         if (form.current && message.current && username.current && emailRef.current) {
             emailjs
-                .sendForm(keys.serviceId, keys.templateId, form.current, keys.userId)
-                .then(
+            .sendForm(process.env.SERVICE_ID ?? '', process.env.TEMPLATE_ID ?? '', form.current, process.env.USER_ID ?? '')
+            .then(
                     (response) => {
                         if (response.status === 200) {
                             form.current!.reset();
                             alert("Emaill sended ill contact you soon!");
-                        } else {
+                        } 
+                           
+                        else {
                             throw new Error('There was an error sending the email');
                         }
                     },
