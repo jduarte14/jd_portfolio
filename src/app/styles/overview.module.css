@@ -58,10 +58,13 @@
     padding-top:5%;
 }
 
-@media (min-width:922px) and (max-width: 1280px) {
+@media (min-width:921px) and (max-width: 1280px) {
     .container {
         max-width:75vw;
         margin:0 auto;
+    }
+    .box_container {
+        overflow-x: scroll;
     }
 }
 

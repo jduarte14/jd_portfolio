@@ -114,6 +114,7 @@
     .mobile_menu_hide {
         position: fixed;
         top: 61px;
+        padding-top:5%;
         bottom: 0;
         height: 100%;
         DISPLAY: FLEX;

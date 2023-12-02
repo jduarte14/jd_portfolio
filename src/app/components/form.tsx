@@ -2,8 +2,7 @@
 import React, { useRef, FormEvent } from 'react';
 import styles from './../styles/contact.module.css';
 import emailjs from '@emailjs/browser';
-
-
+import Buttons from './buttons';
 const Form: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
     const message = useRef<HTMLInputElement>(null);
@@ -68,6 +67,7 @@ const Form: React.FC = () => {
                     />
                     <input type="submit" value="Send" className={styles.btn} />
                 </form>
+        
             </div>
         </>
     );

@@ -2,8 +2,7 @@ import styles from './../styles/contact.module.css';
 import { EarthCanvas } from './canvas/earth';
 import { StarsComponent } from './canvas/stars';
 import Form from './form';
-
-
+import Buttons from './buttons';
 const Contact = () => {
     return (
         <div style={{position:"relative"}}>
@@ -14,6 +13,7 @@ const Contact = () => {
             <aside className={styles.aside}>
                 <StarsComponent/>
             </aside>
+            <Buttons />
         </div>
     )
 }

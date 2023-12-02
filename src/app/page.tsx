@@ -7,6 +7,7 @@ import Overview from './components/overview';
 import Timeline from './components/timeline';
 import Testimonials from './components/testimonials';
 import Contact from './components/contact';
+
 export default function Home() {
   return (
     <>
