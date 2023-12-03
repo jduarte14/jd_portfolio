@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { fadeIn } from '../utils/motion';
 import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from 'framer-motion';
 const Testimonials = () => {
     const [testimonial, setTestimonial] = useState(testimonials);
     const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +21,7 @@ const Testimonials = () => {
         }
     }, [inView]);
     return (
-        <section className={styles.section}  id="testimonials">
+        <section className={styles.section} id="testimonials">
             <div className={styles.container}>
                 <div className={styles.title_info} ref={ref}>
                     <h5>What other say</h5>
@@ -28,10 +29,11 @@ const Testimonials = () => {
                 </div>
                 <div className={styles.testimonial_wrapper}>
                     <div className={styles.testimonial_box} >
+                        <LazyMotion features={domAnimation}>
                         {
                             testimonial.map((partner, index) => {
                                 return (
-                                    <motion.div className={styles.testimonial_info} key={`${partner.name} testimonial`}
+                                    <m.div className={styles.testimonial_info} key={`${partner.name} testimonial`}
                                         initial="hidden"
                                         animate={isVisible ? "show" : "hidden"}
                                         variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
@@ -53,10 +55,11 @@ const Testimonials = () => {
                                             </div>
                                             <Image src={partner.image} width={65} height={65} alt={`${partner.name} testimonial`} />
                                         </div>
-                                    </motion.div>
+                                    </m.div>
                                 )
                             })
                         }
+                        </LazyMotion>
                     </div>
                 </div>
             </div>
