@@ -16,7 +16,7 @@ const Buttons = () => {
                     </p>
                 </div>
                 <div className={styles.row}>
-                    <a className={styles.blank_button} href="https:github.com/jduarte14" target='_blank'>
+                    <a className={styles.blank_button} href="https://www.github.com/jduarte14" target='_blank'>
                         <FaGithub />
                     </a>
                     <p>
