@@ -30,8 +30,9 @@ const Overview = () => {
                     <h2>Overview</h2>
                     <p>
                         I am a skilled developer with experience in JavaScript, and I have expertise in frameworks and libraries <br />
-                        such as React, Vue and Express.js. I am a quick learner who adapts to the project and <br />
-                        focuses on optimizing it using best practices, all while evolving as a developer in the <br />
+                        such as React, Vue and Express.
+                        <br /> I am a quick learner who adapts to the project and <br />
+                        focuses on optimizing it using best practices, all while evolving as a developer in the
                         process.
                     </p>
                     <div className={styles.box_container}>
