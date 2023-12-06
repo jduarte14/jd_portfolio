@@ -5,7 +5,7 @@ import './globals.css'
 const poppins = Poppins({ weight: ['200', '500', '700', '800', '900'], subsets: ['latin'], })
 
 export const metadata: Metadata = {
-  title: 'JDuarte 🌣 Portfolio',
+  title: 'Joaquin Duarte 🌣 Front end developer',
   description: 'Front end developer',
 }
 
